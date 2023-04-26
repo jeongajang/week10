@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    border: 0;
+    vertical-align: top;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* .wrapper{
+    width: 1200px;
+            margin: auto;
+} */
+
+.wrap {
+    margin: 0 auto;
+    height: auto;
+}
+
+.wrap_1200{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+html{
+    background-color: #000;
+}
+
+/* nav css */
+
+header{
+    width: auto;
+}
+
+nav{
+    position: relative;
+    top: 30px;
+    left: 30px;
+    width: 1200px;
+}
+
+nav .gnb > li{
+    font-family: "sandoll-press-original", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+
+    position: relative;
+    float: left;
+    margin-right: 50px;
+}
+
+nav .gnb > li > a{
+    box-sizing: border-box;
+    color: #fff;
+}
+
+nav .gnb > li > a:hover{
+    color: #00FF12;
+}
+
+/* nav css 끝 */
+
+section{
+    text-align: center;
+}
+
+.blue_box{
+
+    position: relative;
+    height: 600px;
+    margin-top: 80px;
+    width: 100%;
+    background-color: #000FFF;
+    
+}
+
+.blue_box .txt{
+    position: relative; 
+    top: 55px;
+}
+
+.txt h1{
+    font-family: "sandoll-press-basic", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 60px;
+    margin-top: 20px;
+}
+.txt .green{
+    color: #00FF12;
+    font-size: 60px;
+    line-height: 70px;
+}
+
+.blue_box img{
+    margin-top: 200px;
+    width: 50%;
+}
+
+.coupon{
+    position: relative;
+    margin-top: 900px;
+}
+
+.coupon .txt2{
+    position: relative;
+}
+
+.coupon .txt2 h1{
+    font-family: "sandoll-press-basic", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 45px;
+    line-height: 70px;
+}
+
+.coupon .cha > img{
+    position: absolute;
+    top: 250px;
+    left: 0;
+}
+
+.coupon > a> img{
+    width: 50%;
+    position: absolute;
+    margin-top: 150px;
+}
+
+
+.bot_txt h1{
+    font-family: "sandoll-press-basic", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 65px;
+    line-height: 85px;
+    color: #00FF12;
+    margin-top: 1200px;
+}
+
+.bot_txt h2{
+    font-family: "ohneuleun", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 50px;
+    font-size: 50px;
+    line-height: 60px;
+}
+
+.baro{
+    position: relative;
+}
+
+.baro .blue_box_baro {
+    height: 300px;
+    margin-top: 200px;
+    width: 100%;
+    background-color: #000FFF;
+
+    background-image: url(../img/img9.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+  
+  
+  .baro .blue_box_baro h3 {
+    font-family: "sandoll-press-basic", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 70px;
+    color: #00FF12;
+    text-align: center;
+    margin: 0;
+    
+    position: relative; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+  }
+
+footer{
+    height: 100px;
+    margin-top: 200px; 
+    text-align: center;
+}
+
+footer h3{
+    color: #666;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+}
+
+/*@media all and (max-width: 767px) {
+    
+}*/

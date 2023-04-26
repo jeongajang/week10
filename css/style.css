@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    border: 0;
+    vertical-align: top;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+    background: #000;
+}
+
+.wrap {
+    margin: 0 auto;
+    background: #000;
+    height: auto;
+}
+
+.wrapper{
+    width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+body{
+    background-color: #000;
+}
+
+h1{
+    font-family: "sandoll-press-basic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2{
+    font-family: "ohneuleun", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+}
+
+em{
+    font-style:normal; 
+    font-weight:bold;
+}
+
+header{
+    width: auto;
+    height: 1000px;
+
+    background-image: url('../img/img1.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: absolute center;
+    text-align: center;
+    
+}
+
+/* .bg_size {background: url(../img/img1.png);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 900px} */
+
+.bg_home>img{
+    width: 100%;
+    height: 1800px;
+}
+
+.tit{
+    position: relative;
+    top: 300px;
+    
+    text-align: center;
+}
+
+.tit h3{
+    font-family: "sandoll-press-basic", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 140px;
+    color: #00FF12;
+}
+
+.tit h2{
+    font-family: "sandoll-press-basic", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 60px;
+    color: blue;
+    -webkit-text-stroke: 1.5px #fff;
+}
+
+nav{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 1200px;
+}
+
+nav .gnb > li{
+    font-family: "sandoll-press-original", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+
+    position: relative;
+    float: left;
+    margin-right: 50px;
+}
+
+nav .gnb > li > a{
+    color: #fff;
+}
+
+nav .gnb > li > a:hover{
+    color: #00FF12;
+}
+
+.wrap_h{
+    margin: 0 auto;
+    position: relative;
+}
+
+.wrap_h img{
+    width: 100%;
+}
+
+.news_text{
+    position: relative;
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 250px;
+    margin-bottom: 300px;
+    
+}
+
+
+
+.wrap_1200{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.news_text2{
+    position: relative;
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 400px;
+    margin-bottom: 90px;
+}
+
+.img4_txt{
+    background-image: url(../img/img4.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: absolute center;
+    width: 100%;
+    height: 1000px;
+    position: relative;
+}
+
+.img4_txt h3{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    color: #000;
+    position: relative;
+    top: 390px;
+    left: 60px;
+
+}
+
+.img4_txt h3 em{
+    color:#000;
+}
+
+.img4_txt h3 .hyper{
+    color: blue;
+    text-decoration: underline 2px;
+    /* border-bottom: blue 2px; */
+    font-weight: 400;
+}
+
+.img4_txt .point{
+    width: 300px;
+    position: absolute;
+    top: 690px;
+    left: 540px;
+}
+
+@keyframes move {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-20px);
+    }
+  }
+  
+  .img4_txt .point {
+    animation: move 0.3s infinite alternate;
+  }
+  
+
+footer{
+    height: 100px;
+    margin-top: 200px; 
+    text-align: center;
+    position: relative;
+    top: 200px;
+}
+
+footer h3{
+    color: #666;
+    font-size: 20px;
+}
+
+@media all and (max-width: 767px) {
+
+    }

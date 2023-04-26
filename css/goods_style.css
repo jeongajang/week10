@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    border: 0;
+    vertical-align: top;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+    /* background: #000; */
+}
+
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.wrap {
+    margin: 0 auto;
+    height: auto;
+    width: 1200px;
+    text-align: center;
+}
+
+html{
+    background-color: #000;
+}
+
+/* nav css */
+
+header{
+    width: auto;
+    /* height: 900px; */
+}
+
+nav{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 1200px;
+}
+
+nav .gnb > li{
+    font-family: "sandoll-press-original", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+
+    position: relative;
+    float: left;
+    margin-right: 50px;
+}
+
+nav .gnb > li > a{
+    box-sizing: border-box;
+    color: #fff;
+}
+
+nav .gnb > li > a:hover{
+    color: #00FF12;
+}
+
+/* nav css 끝 */
+
+h1{ font-family: "sandoll-press-basic", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+h2{
+    font-family: "sandoll-press-basic", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+h3{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+}
+
+em{
+    font-style: normal;
+}
+
+.blue_box{
+
+    position: relative;
+    box-sizing: border-box;
+    height: 450px;
+    top: 130px;
+    width: 100%;
+    background-color: #000FFF;
+    text-align: center;
+
+    
+}
+
+.event_hour .blue_box h3{
+    position: relative;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    top: 60px;
+}
+
+
+/* timer */
+
+  #countdown {
+    font-family: "sandoll-press-basic", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 130px;
+    color: #00FF12;
+    text-align: center;
+    margin-top: 100px;
+    animation: slide-down 1s ease-in-out forwards;
+    width: 1200px;
+    position: relative;
+    /* margin: auto; */
+  }
+  
+  .countdown-item {
+    display: inline-block;
+    margin: 0 20px;
+    text-align: center;
+  }
+  
+  .countdown-item span{
+    color:#00FF12;
+  }
+  
+  .countdown-item p {
+    font-size: 20px;
+    color: white;
+    margin-top: 5px;
+  }
+
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+  }
+  
+  #colon {
+    color: #00FF12;
+    position: relative;
+    top: -60px;
+    animation: blink 1s linear infinite;
+  }
+
+  
+    
+  
+  @keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* timer end */
+
+
+.blue_box h3{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 50px;
+}
+
+.kit{
+    text-align: center;
+    position: relative;
+    top: 230px;
+}
+
+.kit h1{
+    font-size: 250px;
+    color: #00FF12;
+}
+
+.kit img{
+    position: relative;
+    width: 100%;
+    top: -100px;
+    animation: move 0.5s infinite alternate;
+}
+
+@keyframes move {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-50px);
+    }
+  }
+
+
+
+.kit h3{
+    color: #777;
+    position: relative;
+    top: -80px;
+    font-size: 20px;
+}
+
+section{
+    text-align: center;
+    position: relative;
+    top: 320px;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+section h2 {
+    font-size: 50px;
+    color:#00FF12;
+    
+}
+
+section h3{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.dic{
+    position: relative;
+    text-align: left;
+}
+.dic img {width: 100%;}
+
+.dic .miri{
+    text-align: center;
+}
+
+.dic .instruct{
+    text-align: center;
+    font-weight: 300;
+    position: relative;
+    top: -10px;
+    color: #999;
+    font-size: 20px;
+}
+
+/* card flip */
+.card-container {
+    width: 500px;
+    height: 900px;
+    perspective: 1000px;
+    margin: 50px auto;
+}
+
+.dic .page{
+    position: relative;
+    top: -50px;
+    right: 70px;
+    float: right;
+}
+  
+  
+.card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    transform-origin: center;
+}
+
+.card img {
+    width: 500px;
+    height: auto;
+  }
+  
+  
+.front, .back {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+  
+.back {
+    transform: rotateY(180deg);
+}
+  
+.card-container:hover .card {
+    transform: rotateY(180deg);
+}
+  
+  
+/* card flip end */
+
+.skill{
+    position: relative;
+    top: 500px;
+    text-align: left;
+    height: 2600px;
+    padding-bottom: 100px;
+
+}
+.skillList{
+    position: relative;
+    top: 50px;
+}
+.skillList .sk {
+    display: flex;
+    align-items: center;
+}
+  
+.skillList .sk img:hover {
+    margin-right: 30px;
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in-out;
+}
+  
+  
+.skillList .sk-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.skillList .sk-txt h2,
+.skillList .sk-txt h3 {
+    margin: 0;
+    font-weight: 300;
+}
+
+.skillList .sk-txt h3{
+    position: relative;
+    top: 20px;
+    font-size: 30px;
+}
+
+.skillList .sk-txt h2 {font-size: 30px; margin-bottom: 10px;}
+
+.tel{margin-bottom: 300px;}
+
+.blue_box-tel{
+
+    position: relative;
+    box-sizing: border-box;
+    height: 500px;
+    top: 130px;
+    width: 100%;
+    background-color: #000FFF;
+    text-align: center;
+    
+}
+
+.blue_box-tel .tel-text{
+    position: relative;
+    top: 150px;
+}
+
+.blue_box-tel h2{
+    font-size: 60px;
+    color:#00FF12;
+}
+.blue_box-tel h3{
+    position: relative;
+    top: 20px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+
+footer{
+    height: 100px;
+    margin-top: 200px; 
+    text-align: center;
+}
+
+footer h3{
+    color: #666;
+    font-size: 20px;
+}
